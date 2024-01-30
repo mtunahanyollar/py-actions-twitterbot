@@ -3,7 +3,7 @@ name: Python Script Runner
 on:
   workflow_dispatch: 
   schedule:
-    - cron: '0 9 * * *'  # Run every day at 9 a.m.
+    - cron: '0 */6 * * *'  # Run every day at 9 a.m.
 
 jobs:
   run_script:
@@ -30,4 +30,3 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
       run: python blogic.py
-      
