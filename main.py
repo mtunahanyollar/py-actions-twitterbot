@@ -4,4 +4,4 @@
 from blogic import * 
 
 if __name__ == "__main__":   
-    post_date()
+    # TEST
