@@ -4,7 +4,7 @@ import tweepy
 ## Auth
 def post_date():
     import hltv
-    return hltv.get_matches()
+    return hltv.top30teams()
 
 # tt = tweepy.Client(
 #     #Consumer Keys
