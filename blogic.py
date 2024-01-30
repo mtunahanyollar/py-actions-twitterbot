@@ -75,8 +75,9 @@ tt = tweepy.Client(
     
 gasolineValues = gasoline("ISTANBUL")
 euro_values, usd_values = currencies()
+print("Dolares : " + usd_values["BanknoteSelling"] + " EURO : " + euro_values["BanknoteBuying"])
 finalText = "L o L :  \n"+ "Kursunsuz_95(Excellium95)_TL/lt " + gasolineValues[0] + "\n" + "Motorin(Eurodiesel)_TL/lt " + gasolineValues[1]
-finalText = finalText + "\n\n" + "USD ALIŞ: " + usd_values["BanknoteBuying"] + "\nUSD SATIŞ: " + usd_values["BanknoteSelling"]+ "\n\nEURO ALIŞ: " + euro_values["BanknoteBuying"] + "\nEURO SATIŞ: " +  euro_values["BanknoteSelling"]
+finalText = finalText + "\n\n" + "USD ALIS: " + usd_values["BanknoteBuying"] + "\nUSD SATIS: " + usd_values["BanknoteSelling"]+ "\n\nEURO ALIS: " + euro_values["BanknoteBuying"] + "\nEURO SATIS: " +  euro_values["BanknoteSelling"]
 print(finalText)
 tt.create_tweet(text= finalText)
 
