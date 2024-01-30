@@ -442,34 +442,34 @@ def get_match_countdown(match_id):
 
     return _generate_countdown(date, time)
 
-if __name__ == "__main__":
-    import pprint
-    pp = pprint.PrettyPrinter()
+# if __name__ == "__main__":
+#     import pprint
+#     pp = pprint.PrettyPrinter()
 
-    pp.pprint('top5')
-    pp.pprint(top5teams())
+#     pp.pprint('top5')
+#     pp.pprint(top5teams())
 
-    pp.pprint('top30')
-    pp.pprint(top30teams())
+#     pp.pprint('top30')
+#     pp.pprint(top30teams())
 
-    pp.pprint('top_players')
-    pp.pprint(top_players())
+#     pp.pprint('top_players')
+#     pp.pprint(top_players())
 
-    pp.pprint('get_players')
-    pp.pprint(get_players('6665'))
+#     pp.pprint('get_players')
+#     pp.pprint(get_players('6665'))
 
-    pp.pprint('get_team_info')
-    pp.pprint(get_team_info('6665'))
+#     pp.pprint('get_team_info')
+#     pp.pprint(get_team_info('6665'))
 
-    pp.pprint('get_matches')
-    pp.pprint(get_matches())
+#     pp.pprint('get_matches')
+#     pp.pprint(get_matches())
 
-    pp.pprint('get_results')
-    pp.pprint(get_results())
+#     pp.pprint('get_results')
+#     pp.pprint(get_results())
 
-    pp.pprint('get_results_by_date')
-    today_iso = datetime.datetime.today().isoformat().split('T')[0]
-    pp.pprint(get_results_by_date(today_iso, today_iso))
+#     pp.pprint('get_results_by_date')
+#     today_iso = datetime.datetime.today().isoformat().split('T')[0]
+#     pp.pprint(get_results_by_date(today_iso, today_iso))
 
-    pp.pprint('get_match_countdown')
-    pp.pprint(get_match_countdown(MATCH_WITH_COUNTDOWN))
+#     pp.pprint('get_match_countdown')
+#     pp.pprint(get_match_countdown(MATCH_WITH_COUNTDOWN))
