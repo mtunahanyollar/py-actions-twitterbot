@@ -1,11 +1,12 @@
 import os
 import tweepy
 
-## Auth
-def post_date():
-    import hltv
-    return hltv.top30teams()
 
+# def post_date():
+#     import hltv
+#     return hltv.top30teams()
+
+## Auth
 # tt = tweepy.Client(
 #     #Consumer Keys
 #     consumer_key= os.environ['CONSUMER_API_KEY'],
@@ -15,8 +16,13 @@ def post_date():
 #     access_token_secret= os.environ['ACCESS_TOKEN_SECRET'])
   
 # ## Defining Functions
+
+import hltv
+    
 print("TEST")
 #tt.create_tweet(text="/Automated TEST")
-print(post_date())
+print(hltv.top30teams())
+print(hltv.top_players())
+print(hltv.get_team_info('6665'))
 print("TEST2")
 
