@@ -23,7 +23,7 @@ tt = tweepy.Client(
 
 # ## Defining Functions
 print("TEST")
-tt.create_tweet(text="TESTT")
+tt.create_tweet(text="/Automated TEST")
 print("TEST2")
 # now = dt.now()
 
