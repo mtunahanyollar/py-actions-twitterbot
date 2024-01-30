@@ -1,6 +1,7 @@
 name: Python Script Runner
 
 on:
+  workflow_dispatch: 
   schedule:
     - cron: '0 9 * * *'  # Run every day at 9 a.m.
 
