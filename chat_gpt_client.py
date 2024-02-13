@@ -4,8 +4,7 @@ import openai
 class ChatGptClient:
     def __init__(self):
         # Retrieve the API key from the environment variable
-        # api_key = os.environ.get("OPENAI_API_KEY")
-        api_key = "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"
+        api_key = os.environ.get("OPENAI_API_KEY")
         if not api_key:
             raise ValueError("OPENAI_API_KEY environment variable is not set.")
         
