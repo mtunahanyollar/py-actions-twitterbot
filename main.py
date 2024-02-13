@@ -6,7 +6,7 @@ def main():
     chat_gpt_client = ChatGptClient()
 
     # Generate response using ChatGptClient
-    user_message = "Turk sairlerden guzel emek siirleri bul ve getir. Yazari en sona ekleyerek yaz bana"
+    user_message = "Turk sairlerden guzel emek siirleri dortluk olarak bul ve getir. Yazari en sona ekleyerek yaz bana"
     response = chat_gpt_client.generate_response(user_message)
     print("ChatGPT Response:", response)
 
