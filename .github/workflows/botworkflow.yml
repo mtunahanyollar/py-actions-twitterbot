@@ -29,4 +29,5 @@ jobs:
         CONSUMER_API_SECRET: ${{ secrets.CONSUMER_API_SECRET }}
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
-      run: python blogic.py
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: python main.py
