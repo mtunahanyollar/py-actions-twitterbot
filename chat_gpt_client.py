@@ -1,6 +1,7 @@
 import os
 import openai
-
+import sys
+sys.stdout.reconfigure(encoding='utf-8')
 class ChatGptClient:
     def __init__(self):
         # Retrieve the API key from the environment variable

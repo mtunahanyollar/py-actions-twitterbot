@@ -31,10 +31,3 @@ jobs:
         ACCESS_TOKEN_SECRET: ${{ secrets.ACCESS_TOKEN_SECRET }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       run: python main.py
-
-    - name: Install OpenAI Python library
-      run: |
-        pip install openai
-
-    - name: Run OpenAI script
-      run: python openai_script.py
