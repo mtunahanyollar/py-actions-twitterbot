@@ -15,7 +15,8 @@ class ChatGptClient:
     def generate_response(self, user_message):
         # Generate a response from the ChatGPT model given a user message
         completion = openai.chat.completions.create(
-        model="gpt-3.5-turbo-0125",
+        #model="gpt-3.5-turbo-0125",
+        model="gpt-4",
         messages=[
             {
                 "role": "user",
