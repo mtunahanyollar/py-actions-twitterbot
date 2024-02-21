@@ -9,7 +9,7 @@ def main():
     result = random.choice(topics)
     print(result)
     # Generate response using ChatGptClient
-    user_message = result
+    user_message = "280 KARAKTERİ GEÇME!" + result 
     response = chat_gpt_client.generate_response(user_message)
     print("ChatGPT Response:", response)
 
