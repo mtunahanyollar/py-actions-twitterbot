@@ -12,15 +12,15 @@ def main():
     user_message = "280 KARAKTERİ GEÇME!" + result 
     response = chat_gpt_client.generate_response(user_message)
     print("ChatGPT Response:", response)
-
+    
     # Initialize TwitterClient
     twitter_client = TwitterClient()
 
     # Get the Twitter Client
     twitter_api_client = twitter_client.get_client()
     print("Twitter Client:", twitter_api_client)
-
-    twitter_api_client.create_tweet(text = response)
+    asTweet = response[:280]
+    twitter_api_client.create_tweet(text = asTweet)
 
 if __name__ == "__main__":
     main()
