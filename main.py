@@ -5,7 +5,7 @@ from twitter_client import TwitterClient
 def main():
     # Initialize ChatGptClient
     chat_gpt_client = ChatGptClient()
-    topics = ["Emek ve dayanışma üzerine şiirler yazdığını düşün türk şairlerden şiir seç ve paylaş.(Alinti yap)", "Twitter fenomeni olduğunu düşün her gün farklı motivasyon ve emeğe dair tweetler atıyorsun. YARATICI OL!"]
+    topics = ["Twitter fenomeni oldugunu dusun ve gunde birkac kez hayvanlar alemi hakkinda degisik bilgiler paylastigini dusun, 280 karakteri gecmeyen bilgiler paylas.", "Twitter fenomeni olduğunu düşün ve gunde birkac kez dunyadan degisik bilgiler paylasiyorsun simdi bana 280 karakter sinirini asmayan bir bilgi paylas. YARATICI OL!"]
     result = random.choice(topics)
     print(result)
     # Generate response using ChatGptClient
